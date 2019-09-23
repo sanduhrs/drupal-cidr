@@ -1,0 +1,22 @@
+cidr.cidr.*:
+  type: config_entity
+  label: CIDR
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    uuid:
+      type: string
+    ip_dotted:
+      type: string
+    suffix:
+      type: integer
+    range_start:
+      type: integer
+    range_end:
+      type: integer
+    uid:
+      type: integer

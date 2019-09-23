@@ -1,0 +1,31 @@
+entity.cidr.collection:
+  path: '/admin/structure/cidr'
+  defaults:
+    _entity_list: 'cidr'
+    _title: 'CIDR configuration'
+  requirements:
+    _permission: 'administer cidr'
+
+entity.cidr.add_form:
+  path: '/admin/structure/cidr/add'
+  defaults:
+    _entity_form: 'cidr.add'
+    _title: 'Add a cidr'
+  requirements:
+    _permission: 'administer cidr'
+
+entity.cidr.edit_form:
+  path: '/admin/structure/cidr/{cidr}'
+  defaults:
+    _entity_form: 'cidr.edit'
+    _title: 'Edit a cidr'
+  requirements:
+    _permission: 'administer cidr'
+
+entity.cidr.delete_form:
+  path: '/admin/structure/cidr/{cidr}/delete'
+  defaults:
+    _entity_form: 'cidr.delete'
+    _title: 'Delete a cidr'
+  requirements:
+    _permission: 'administer cidr'

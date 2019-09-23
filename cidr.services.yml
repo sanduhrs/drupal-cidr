@@ -1,0 +1,14 @@
+services:
+  cidr.event_subscriber:
+    class: Drupal\cidr\EventSubscriber\CidrSubscriber
+    arguments: ['@session', '@request_stack', '@messenger', '@cidr.service', '@entity_type.manager']
+    tags:
+      - { name: event_subscriber }
+  cidr.service:
+    class: Drupal\cidr\CidrService
+    arguments: ['@config.factory']
+  cidr.page_cache_request_policy.disallow_cidr_requests:
+    class: Drupal\cidr\PageCache\DisallowCidrRequests
+    public: false
+    tags:
+      - { name: page_cache_request_policy }

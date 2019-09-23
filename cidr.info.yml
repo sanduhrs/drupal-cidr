@@ -1,0 +1,6 @@
+name: CIDR
+type: module
+description: 'Provides a cidr configuration entity.'
+package: User Access &amp; Authentication
+core: 8.x
+configure: entity.cidr.collection

@@ -1,0 +1,5 @@
+entity.cidr.add_form:
+  route_name: 'entity.cidr.add_form'
+  title: 'Add cidr'
+  appears_on:
+    - entity.cidr.collection
